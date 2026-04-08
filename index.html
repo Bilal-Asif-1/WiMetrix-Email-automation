@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Design 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="header">
+    <nav class="navbar">
+
+      <div class="logo">
+        <img src="assets/unnamed.png" alt="Wimetrix logo" />
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#">Insights</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#" class="active">Work Order Detail</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <div class="search-box">
+          <span><img src="assets/search-interface-symbol.png" alt="Search" class="nav-icon-img" /></span>
+          <input type="text" placeholder="Search orders..." />
+        </div>
+        <span class="icon"><img src="assets/bell.png" alt="Notifications" class="nav-icon-img" /></span>
+        <span class="icon"><img src="assets/setting.png" alt="Settings" class="nav-icon-img" /></span>
+        <img src="assets/profile.png" class="profile" alt="Profile" />
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- MAIN LAYOUT -->
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="sidebar-header">
+        <div class="icon-box"><img src="assets/box.png" alt="Plant" class="sidebar-head-icon" /></div>
+        <div>
+          <h3>Plant Floor</h3>
+          <p>Unit 04 - Active</p>
+        </div>
+      </div>
+
+      <button class="new-btn">+ New Work Order</button>
+
+      <ul class="menu">
+        <li><img src="assets/box.png" alt="" class="menu-icon" /> <span>Orders</span></li>
+        <li><img src="assets/cotton.png" alt="" class="menu-icon" /> <span>Fabric</span></li>
+        <li><img src="assets/package.png" alt="" class="menu-icon" /> <span>Packing</span></li>
+        <li><img src="assets/report.png" alt="" class="menu-icon" /> <span>Reports</span></li>
+      </ul>
+
+      <div class="bottom-menu">
+        <p><img src="assets/support.png" alt="" class="menu-icon" /> <span>Support</span></p>
+        <p><img src="assets/report.png" alt="" class="menu-icon" /> <span>Logs</span></p>
+      </div>
+
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="main-content">
+
+         <!-- Pagination / Current Path -->
+  <div class="pagination">
+    Home &gt; Insights &gt; Dashboard &gt; WO-45892 (Current)
+    <!-- You can add comments or extra info here -->
+  </div>
+
+  <!-- Main heading / Current Path -->
+  <div class="heading1">
+        Work Order: #45892 - Cotton Twill Chinos
+    <!-- You can asdd comments or extra info here -->
+  </div>
+
+  <!-- Status / Action Bar -->
+<div class="status-bar">
+  <div class="status-label">In Production</div>
+  <div class="status-text">Last updated 12 mins ago</div>
+  <div class="status-actions">
+    <button class="edit-btn">Edit Order</button>
+    <button class="export-btn">Export Report</button>
+  </div>
+</div>
+
+<!-- Four Boxes Row -->
+<div class="kpi-row">
+  <div class="kpi-card kpi-card-progress">
+    <div class="kpi-label">Total Pieces</div>
+    <div class="kpi-progress-line">
+      <div class="kpi-main-value">12,000</div>
+      <div class="kpi-progress-value">65% Progress</div>
+    </div>
+    <div class="kpi-progress-track">
+      <div class="kpi-progress-fill"></div>
+    </div>
+  </div>
+
+  <div class="kpi-card">
+    <div class="kpi-label">POS Included</div>
+    <div class="kpi-value">4</div>
+    <div class="kpi-note">Across 3 separate factories</div>
+  </div>
+
+  <div class="kpi-card">
+    <div class="kpi-label">Quality Score</div>
+    <div class="kpi-inline">
+      <div class="kpi-value">98.4%</div>
+    </div>
+    <div class="kpi-note kpi-note-green">+0.8% from target</div>
+  </div>
+
+  <div class="kpi-card">
+    <div class="kpi-label">Delivery Deadline</div>
+    <div class="kpi-value kpi-value-brown">Oct 25</div>
+    <div class="kpi-note kpi-note-brown">2026 • 42 Days remaining</div>
+  </div>
+</div>
+
+<div class="ops-layout">
+  <div class="ops-left">
+    <div class="section-head">
+      <div class="section-title">Associated Purchase Orders</div>
+      <div class="section-icons">
+        <button type="button" class="mini-icon" aria-label="Filter list">≡</button>
+        <button type="button" class="mini-icon" aria-label="Sort list">☰</button>
+      </div>
+    </div>
+
+    <div class="po-card">
+      <div class="po-top">
+        <div class="po-id-wrap">
+          <div class="po-id">PO #112</div>
+          <div class="po-tag po-tag-green">ON TRACK</div>
+        </div>
+        <div class="po-metrics">
+          <div class="po-metric"><span>REJECTION</span><strong>1.2%</strong></div>
+          <div class="po-metric"><span>REWORK</span><strong>0.8%</strong></div>
+        </div>
+      </div>
+      <div class="po-target">Target Quantity: <strong>3,000 Pcs</strong></div>
+      <div class="po-labels">
+        <div>CUTTING (90%)</div>
+        <div>STITCHING (45%)</div>
+        <div>PACKING (0%)</div>
+      </div>
+      <div class="po-bars">
+        <div class="po-bar"><div class="fill fill-90"></div></div>
+        <div class="po-bar"><div class="fill fill-45"></div></div>
+        <div class="po-bar"><div class="fill fill-0"></div></div>
+      </div>
+      <div class="po-foot">
+        <div>Unit 04, Line B</div>
+        <div class="po-link">View Full Details →</div>
+      </div>
+    </div>
+
+    <div class="po-card">
+      <div class="po-top">
+        <div class="po-id-wrap">
+          <div class="po-id">PO #113</div>
+          <div class="po-tag po-tag-brown">AT RISK</div>
+        </div>
+        <div class="po-metrics">
+          <div class="po-metric"><span>REJECTION</span><strong class="text-red">4.5%</strong></div>
+          <div class="po-metric"><span>REWORK</span><strong>2.1%</strong></div>
+        </div>
+      </div>
+      <div class="po-target">Target Quantity: <strong>3,000 Pcs</strong></div>
+      <div class="po-labels">
+        <div>CUTTING (100%)</div>
+        <div>STITCHING (12%)</div>
+        <div>PACKING (0%)</div>
+      </div>
+      <div class="po-bars">
+        <div class="po-bar"><div class="fill fill-100"></div></div>
+        <div class="po-bar"><div class="fill fill-12"></div></div>
+        <div class="po-bar"><div class="fill fill-0"></div></div>
+      </div>
+      <div class="po-foot">
+        <div>Unit 04, Line C</div>
+        <div class="po-alert">⚠ Fabric delay: Line 03</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ops-right">
+    <div class="breakdown-card">
+      <div class="section-title">Production Breakdown</div>
+
+      <div class="dept">
+        <div class="dept-head">DEPARTMENT</div>
+        <div class="dept-row"><div>Cutting</div><div>11,400 / 12,000</div></div>
+        <div class="dept-bar"><div class="fill fill-95"></div></div>
+        <div class="dept-note"><span>In Progress: 2,400</span><span>Ready: 9,000</span></div>
+      </div>
+
+      <div class="dept">
+        <div class="dept-head">DEPARTMENT</div>
+        <div class="dept-row"><div>Induction</div><div>8,200 / 12,000</div></div>
+        <div class="dept-bar"><div class="fill fill-68"></div></div>
+      </div>
+
+      <div class="dept">
+        <div class="dept-head">DEPARTMENT</div>
+        <div class="dept-row"><div>Finishing</div><div>3,120 / 12,000</div></div>
+        <div class="dept-bar"><div class="fill fill-26"></div></div>
+      </div>
+
+      <div class="dept">
+        <div class="dept-head">DEPARTMENT</div>
+        <div class="dept-row"><div>Packing</div><div>420 / 12,000</div></div>
+        <div class="dept-bar"><div class="fill fill-4"></div></div>
+      </div>
+    </div>
+
+    <div class="material-card">
+      <div class="material-label">ACTIVE MATERIAL</div>
+      <div class="material-title">100% Organic Cotton Twill</div>
+    </div>
+
+    <div class="alert-card">
+      <div class="alert-head">
+        <div class="alert-icon">✳</div>
+        <div class="alert-title">Production Alert</div>
+      </div>
+      <div class="alert-text">Packing line efficiency has increased by 14% since the morning shift change.</div>
+    </div>
+  </div>
+</div>
+    </main>
+
+
+</body>
+</html>
